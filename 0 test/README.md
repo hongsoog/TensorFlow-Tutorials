@@ -5,7 +5,7 @@
 
 인공지능에 대한 명확한 정의는 아직 없지만, 저는 인공지능은 관념에 가까운 것으로, 컴퓨터가 인간의 사고를 모방하는 모든 것을 뜻한다고 보고 있습니다. 그리고 **머신러닝**(_machine learning_)은 개념으로써, 컴퓨터가 스스로 학습하는 것을 말합니다. 특히 주어진 데이터를 이용해서 말이죠. 그리고 요즘 **딥러닝**(_deep learning_)으로 대표되는 **인공신경망**(_artificial neural network_)은 머신러닝을 구현하는 기술의 하나로, 인간 뇌의 동작 방식에서 착안하여 개발한 학습 방법입니다.
 
-![그림 1-1](images/fig%201-1.png)
+![그림 1-1](images/fig0101.png)
 
 **그림 1-1** 인공지능 > 머신러닝 > 딥러닝
 
@@ -15,13 +15,13 @@
 
 > **NOTE:** 머신러닝에는 다양한 방법이 있지만, 간략히 설명하기 위해 약간 비약하였습니다. 참고로 이러한 방법을 end-to-end 학습이라고 하며, 딥러닝이 바로 이러한 방식으로 학습합니다.
 
-![그림 1-2](images/fig%201-2.png)
+![그림 1-2](images/fig0102.png)
 
 **그림 1-2** 규칙기반 인공지능과 머신러닝의 바나나 인식
 
 그러면 인공지능에 썰어놓은 바나나를 추가로 인식시키려면 어떻게 해야 할까요? 규칙기반 인공지능은 앞의 규칙에 “하얀색이고, 납작하고, 둥글다”라는 특징을 수작업으로 추가해줘야 합니다. 하지만 머신러닝은 썰어놓은 바나나 사진만 입력해주면 알아서 새로운 특징을 학습하고 인식할 수 있습니다.
 
-![그림 1-3](images/fig%201-3.png)
+![그림 1-3](images/fig0103.png)
 
 **그림 1-3** 썰어놓은 바나나를 인식하는 방법
 
@@ -31,7 +31,7 @@
 
 ILSVRC는 **이미지넷**(_ImageNet_)이 제공하는 1,000여 카테고리로 분류된 100만 개의 이미지를 인식하여 그 정확도를 겨루는 대회입니다. 이 대회에서 2011년까지는 이미지 인식률이 75%를 넘지 못하였는데, 2012년 대회에서 인공신경망을 이용한 알렉스넷(_AlexNet_)이 무려 84.7%라는 놀라운 인식률을 달성합니다. 그 이후부터는 딥러닝을 이용한 인공지능이 상위 랭크를 모두 휩쓸었고, 매년 인식률이 높아져, 현재는 상당수의 도전자가 97%에 육박하는 인식률을 기록하고 있습니다. 이는 인간의 인식률인 95%를 훨씬 웃도는 수준입니다.
 
-![그림 1-4](images/fig%201-4.png)
+![그림 1-4](images/fig0104.png)
 
 **그림 1-4** ILSVRC 인식 오류율(100% - 인식률)
 
@@ -58,7 +58,7 @@ ILSVRC는 **이미지넷**(_ImageNet_)이 제공하는 1,000여 카테고리로 
 
 그런 점에 있어 현존하는 머신러닝 라이브러리 중 커뮤니티가 가장 북적이는 것이 바로 텐서플로입니다. 깃허브의 텐서플로 저장소나 각종 애플리케이션, 클라우드 서비스 등은 물론, 새로운 논문이 나올 때마다 텐서플로로 된 구현체가 가장 먼저 나올 정도로 텐서플로 커뮤니티는 놀라울 만큼 활발하게 움직이고 있습니다.
 
-![그림 1-5](images/fig%201-5.png)
+![그림 1-5](images/fig0105.png)
 
 **그림 1-5** TensorFlow KR 페이스북 (2017년 8월 24일 현재 가입자 21,975명)
 
@@ -94,13 +94,13 @@ C:\> pip3 install --upgrade tensorflow-gpu
 C:\> pip3 install numpy matplotlib pillow
 ```
 
-● numpy - 수치 계산 라이브러리
-● matplotlib - 그래프 출력 라이브러리
-● pillow - 이미지 처리 라이브러리
+* numpy - 수치 계산 라이브러리
+* matplotlib - 그래프 출력 라이브러리
+* pillow - 이미지 처리 라이브러리
 
 이 외에 홈브루Homebrew, 아나콘다Anaconda 또는 소스를 직접 빌드해서 설치하는 다양한 방법이 있습니다. 설치가 잘 안 되거나 더 다양한 방법들을 알고 싶다면 다음의 텐서플로의 공식 홈페이지에서 확인하세요.
 
-● https://www.tensorflow.org/install
+* https://www.tensorflow.org/install
 
 ### 2.2 텐서플로 예제 내려받고 실행해보기
 이 책의 모든 예제는 깃허브 저장소 https://github.com/golbin/TensorFlow-Tutorials에 올려뒀습니다. 다음의 git 명령어로 소스코드 전체를 내려받거나, 압축 파일을 내려받아 적당한 위치에 풀어둡니다.
@@ -109,7 +109,7 @@ C:\> pip3 install numpy matplotlib pillow
 C:\> git clone https://github.com/golbin/TensorFlow-Tutorials.git
 ```
 
-![그림 2-1](images/fig%202-1.png)
+![그림 2-1](images/fig0201.png)
 
 **그림 2-1** 깃허브에서 예제 소스 압축 파일 내려받기
 
@@ -128,7 +128,7 @@ b'Hello, TensorFlow!'
 > **NOTE:** 텐서플로 실행 시 다음과 같은 경고 메시지가 나올 수 있지만 텐서플로 실행에는 문제없으니 무시하셔도 됩니다.
 >
 >```
-2017-06-30 19:15:49.653301: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+>2017-06-30 19:15:49.653301: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
 >2017-06-30 19:15:49.653322: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
 >```
 
@@ -156,7 +156,7 @@ C:\> jupyter notebook
 
 그러면 웹브라우저가 열리면서 주피터 노트북이 실행될 것입니다.
 
-![그림 2-2](images/fig%202-2.png)
+![그림 2-2](images/fig0202.png)
 
 **그림 2-2** 주피터 노트북을 TensorFlow-Tutorials 저장소의 폴더에서 실행한 모습
 
@@ -164,7 +164,8 @@ C:\> jupyter notebook
 
 새 프로젝트가 생성된 뒤, 파이썬 코드들을 넣고 Shift + Enter를 치면 다음처럼 코드 조각들의 실행 결과를 쉽게 확인할 수 있습니다.
 
-![그림 2-3](images/fig%202-3.png)
+![그림 2-3](images/fig0203.png)
+
 **그림 2-3** 주피터 노트북 사용 예
 
 이처럼 주피터 노트북은 파이썬 코드를 반복해서 실행하고 중간중간 결과를 확인하기에 매우 좋은 프로그램입니다. 하지만 이 책은 기본적으로 명령 프롬프트에서 실행하는 것을 가정하므로 주피터 노트북에서는 실행되지 않는 경우도 있을 것입니다(그래프를 그리거나 실행이 오래 걸리는 경우 등). 이런 경우가 생기면 당황하지 말고 구글링을 하시면 쉽게 해결책을 찾을 수 있을 것입니다. 구글은 모든 엔지니어의 친구니까요.
